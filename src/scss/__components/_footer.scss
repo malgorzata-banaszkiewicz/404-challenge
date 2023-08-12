@@ -1,0 +1,21 @@
+.main-footer {
+	margin: rem(20) 0;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	@include media(">=lg") {
+		margin: rem(40) 0;
+	}
+	&__owner {
+		color: $color-silver;
+		@include font(14, 17.07);
+		text-align: center;
+
+		&--name {
+			font-weight: $font-weight-bold;
+			color: $color-silver;
+			&:hover {
+				color: $color-black;
+			}
+		}
+	}
+}

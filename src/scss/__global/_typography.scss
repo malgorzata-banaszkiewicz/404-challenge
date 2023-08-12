@@ -1,0 +1,14 @@
+h1 {
+	color: $color-mine-shaft;
+	@include font(48, 71, 700, -0.63);
+	@include media(">=lg") {
+		@include font(64, 95);
+	}
+}
+
+p {
+	color: $color-emperor;
+	@include media(">=lg") {
+		@include font(24, 27);
+	}
+}

@@ -1,0 +1,11 @@
+.main-header__alert {
+	font-family: "Inconsolata", monospace;
+	@include font(24, 25.18, 700, -2.01);
+	text-transform: uppercase;
+	color: $color-mine-shaft;
+	margin: rem(30) 0;
+
+	@include media(">=lg") {
+		margin: rem(30) 0 0 rem(77);
+	}
+}

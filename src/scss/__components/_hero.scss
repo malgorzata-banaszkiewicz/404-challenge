@@ -1,0 +1,62 @@
+.block-hero {
+	margin: rem(64) 0;
+	@include media(">=lg") {
+		flex-direction: row;
+		margin: rem(265) 0 rem(308) 0;
+	}
+
+	&__wrapper {
+		display: flex;
+		@include media("<lg") {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__article {
+		@include media(">=lg") {
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+
+	&__message {
+		margin-top: rem(60);
+		@include media(">=lg") {
+			margin-top: 0;
+		}
+	}
+
+	&__paragraph {
+		margin-top: rem(36);
+		@include media(">=lg") {
+			width: rem(381);
+		}
+	}
+
+	&__image {
+		padding: rem(19.09) 0;
+
+		@include media(">=lg") {
+			padding: 0 rem(118.78) 0 rem(77);
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+
+	&__btn {
+		color: $color-white;
+		background-color: $color-mine-shaft;
+		padding: rem(34) rem(64);
+		text-transform: uppercase;
+		border: none;
+		margin: rem(64) 0;
+		transition: color $default-transition, background-color $default-transition;
+		max-width: rem(500);
+		cursor: pointer;
+
+		&:hover {
+			background-color: $color-silver;
+			color: $color-black;
+		}
+	}
+}
